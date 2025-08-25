@@ -17,6 +17,16 @@ public class Docente {
 
     //  Metodos
 
-    
+    public void mostrarDocente()  //Metodo para mostrar informacion de docente
+    {
+        System.out.println("Identificacion: " + idDocente);
+        System.out.println("Nombre Docente: " +nombreDocente);
+        System.out.println("Materia: " +materia);
+    }
+
+    public void presentacionDocente()   //Metodo para la presentacion del docente
+    {
+        System.out.println("El docente " +nombreDocente + " con el id " +idDocente + " dicta la materia " +materia);
+    }
     
 }

@@ -3,14 +3,16 @@ public class Estudiante{
 
     private int idEstudiante;
     private String nombreEstudiante;
+    public String carrera;
     public int semestreActual;
 
     // constructor
 
-    public Estudiante(int idEstudiante, String nombreEString, int semestreActual)
+    public Estudiante(int idEstudiante, String nombreEString, String carrera, int semestreActual)
     {
         this.idEstudiante = idEstudiante;
         this.nombreEstudiante = nombreEstudiante;
+        this.carrera = carrera;
         this.semestreActual = semestreActual;
     }
 
@@ -20,16 +22,25 @@ public class Estudiante{
     {
         System.out.println("Identificacion: " +idEstudiante);
         System.out.println("Nombre: " +nombreEstudiante);
+        System.out.println("Carrera: " +carrera);
         System.out.println("Semestre: " +semestreActual);
     }
 
     public void presentarEstudiante()  //Metodo para presentar estudiante
     {
         System.out.println("El estudiante " + nombreEstudiante + " ,identificad@ con: " + idEstudiante + ", y cursa actualmente: " + 
-        semestreActual + " Semestre");
+        semestreActual + " Semestre" + " de " + carrera);
     }
 
-    
+    public void mostrarEstudio()  //muestra metodo estudiar como se planteo en el diagrama
+    {
+        System.out.println("El estudiante: " + nombreEstudiante + ", estudia actualmente: " +carrera);
+    } 
+
+    public void obtenerSemestreAcual()  // Creamos metodo para mostrar el semestre actual
+    {
+        System.out.println("El estudiante: " + nombreEstudiante + ", cursa actualmente: " + semestreActual + " semestre");
+    }
 
 
 }

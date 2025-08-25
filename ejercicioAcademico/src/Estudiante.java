@@ -8,7 +8,7 @@ public class Estudiante{
 
     // constructor
 
-    public Estudiante(int idEstudiante, String nombreEString, String carrera, int semestreActual)
+    public Estudiante(int idEstudiante, String nombreEstudiante, String carrera, int semestreActual)
     {
         this.idEstudiante = idEstudiante;
         this.nombreEstudiante = nombreEstudiante;
@@ -28,7 +28,7 @@ public class Estudiante{
 
     public void presentarEstudiante()  //Metodo para presentar estudiante
     {
-        System.out.println("El estudiante " + nombreEstudiante + " ,identificad@ con: " + idEstudiante + ", y cursa actualmente: " + 
+        System.out.println("El estudiante " + nombreEstudiante + " identificad@ con el numero " + idEstudiante + " cursa actualmente: " + 
         semestreActual + " Semestre" + " de " + carrera);
     }
 

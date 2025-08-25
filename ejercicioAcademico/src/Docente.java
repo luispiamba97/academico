@@ -29,7 +29,7 @@ public class Docente {
         System.out.println("El docente " +nombreDocente + " con el id " +idDocente + " dicta la materia " +materia);
     }
 
-    public void calificar()
+    public void calificar()   // Metodo para mostrar que califica el docente
     {
         System.out.println("El docente " + nombreDocente + " se encuentra calificando examenes de: " +materia);
     }
